@@ -1,12 +1,12 @@
 
-***NOTE: ***
+#NOTE 
 
 Directory structure of yoloSource:
 
   yoloSource
-    |- coco.names
-    |- yolov3.cfg
-    |_ yolov3.weights
+    |- coco.names(https://github.com/pjreddie/darknet/blob/master/data/coco.names)
+    |- yolov3.cfg(https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
+    |_ yolov3.weights(https://pjreddie.com/media/files/yolov3.weights)
 
 
 
