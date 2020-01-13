@@ -12,19 +12,16 @@ while True:
 	img2 = cv2.imread('white.jpg', cv2.IMREAD_COLOR)
 
 
-	_,threshold = cv2.threshold(img, 110, 255,
-								cv2.THRESH_BINARY)
+	_,threshold = cv2.threshold(img, 110, 255, cv2.THRESH_BINARY)
 
-	contours,_=cv2.findContours(threshold, cv2.RETR_TREE,
-								cv2.CHAIN_APPROX_SIMPLE)
+	_, contours,_=cv2.findContours(threshold, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
 	posible_arrow = None
 	for cnt in contours :
 		area = cv2.contourArea(cnt)
 		# print(len(area))
 		if area > 400:
-			approx = cv2.approxPolyDP(cnt,
-									0.01 * cv2.arcLength(cnt, True), True)
+			approx = cv2.approxPolyDP(cnt, 0.01 * cv2.arcLength(cnt, True), True)
 			if(len(approx) == 7):
 				posible_arrow = approx.copy()
 
