@@ -4,7 +4,7 @@ Pass source of yolo as argument
 Directory structure of yoloSource:
 
 ```bash
-  tree
+
     yoloSource
       ├── coco.names(https://github.com/pjreddie/darknet/blob/master/data/coco.names)
       ├── yolov3.cfg(https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
